@@ -1,0 +1,24 @@
+package main;
+
+import java.util.Scanner;
+
+public  class Main {
+    public static void main(String[] args) {
+        // 터미널에 처음 정수 선언
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt();
+
+        //
+        int num = 666;
+        int count = 1;
+        while (count != N){
+            num++;
+            // num 을 문자열로 변환시켜서 666이 있는 체크한다 .contains 는 true false를 반환한다, 왜 문자열이지?
+            if(String.valueOf(num).contains("666")){
+                count++;
+            // 666 있을경우 count를 1증가시키고 N이 카운터랑 같아지면 해당 숫자를 출력
+            }
+        }
+        System.out.println(num);
+    }
+}
